@@ -1207,6 +1207,22 @@
   .pres-role{display:block;font-family:var(--font-body);font-weight:600;color:#007C7F;font-size:14px;margin-top:2px}
   .pres-bio{font-family:var(--font-body);font-size:14.5px;line-height:1.55;color:var(--ink-3);margin:9px 0 0;max-width:840px}
   @media (max-width:640px){ .presenter-strip{flex-direction:column;gap:14px} }
+  /* ROI proof band */
+  .roi-band{background:#EEE4C7;padding:64px 32px}
+  .roi-inner{max-width:1320px;margin:0 auto}
+  .roi-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#006366;font-weight:600;margin-bottom:26px}
+  .roi-stats{display:flex;gap:64px;flex-wrap:wrap;margin-bottom:30px}
+  .roi-stat{font-family:var(--font-display);font-weight:800;font-size:104px;line-height:.88;color:#DD7225;letter-spacing:-.03em}
+  .roi-statsub{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#00334A;opacity:.75;margin-top:12px;max-width:230px}
+  .roi-copy-p{font-family:var(--font-body);font-size:20px;line-height:1.55;color:#00334A;margin:0;max-width:900px}
+  .roi-copy-p b{font-weight:700}
+  @media (max-width:760px){
+    .roi-band{padding:44px 22px}
+    .roi-stats{gap:32px}
+    .roi-stat{font-size:66px}
+    .roi-statsub{max-width:none}
+    .roi-copy-p{font-size:17px}
+  }
 </style>
 </head>
 <body>
@@ -1653,6 +1669,24 @@
 </div>
   </section>
 </header>
+
+<!-- =================== ROI PROOF =================== -->
+<section class="roi-band">
+  <div class="roi-inner">
+    <div class="roi-eyebrow">Why it matters</div>
+    <div class="roi-stats">
+      <div>
+        <div class="roi-stat">5×</div>
+        <div class="roi-statsub">return on ad spend, up from 2× year over year</div>
+      </div>
+      <div>
+        <div class="roi-stat">$15M</div>
+        <div class="roi-statsub">tuition revenue from marketing campaigns</div>
+      </div>
+    </div>
+    <p class="roi-copy-p">Connecting marketing spend to actual enrolled students is what makes ROI <b>visible</b> in the first place — it allows you to see which programs, audiences, and campaigns truly convert. With this dashboard, I can confidently say that our <b>Return on Ad Spend (ROAS) increased from 2× to 5×</b> year over year across the graduate portfolio, generating <b>$15 million in tuition revenue</b> from marketing campaigns.</p>
+  </div>
+</section>
 
 <!-- =================== CLOSING =================== -->
 <div class="final-cta">
